@@ -17,6 +17,7 @@
     /* Background */
     --primary-bg-cl: #ffffff;
     --accent-bg-cl: #2196F3;
+    --gray-bg-cl: #2F303A;
     /* Colors for button */
     --text-bt-cl: #ffffff;
 }
@@ -34,12 +35,17 @@
 }
 
 .footer {
-    background: #2F303A;
+    background: var(--gray-bg-cl);
 }
 
 /* Section-1 */
 .hero {
-    background:#2F303A;
+    background: var(--gray-bg-cl);
+}
+.hero-title {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -75,11 +81,28 @@
 }
 
 /* Button */
+.button {
+    color: var(--title-txt-cl);
+    background-color: var(--primary-bg-cl);
+}
 
+/* я не знаю чого кнопка не в центрі. поможіть(( */
 .hero-button {
     color: var(--text-bt-cl);
     background-color: var(--accent-bg-cl);
+    text-align: center;
 }
+.button.radio {
+    color: var(--title-txt-cl);
+    background-color: var(--primary-bg-cl);
+}
+.button.radio:hover {
+    color: var(--text-bt-cl);
+    background-color: var(--accent-bg-cl);
+}
+
+
+
 
 
 
