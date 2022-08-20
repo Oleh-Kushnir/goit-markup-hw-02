@@ -11,20 +11,37 @@
     --secondary-font: 'Raleway', sans-serif;
 
     /* Text colors */
-    --main-txt-cl: #212121;
-    --light-txt-cl: #ffffff;
-    --accent-txt-cl: #ff6c00;}
+    --primary-txt-cl: #757575;
+    --title-txt-cl: #212121;
+    --accent-txt-cl: #2196F3 ;
+    /* Background */
+    --primary-bg-cl: #ffffff;
+    --accent-bg-cl: #2196F3;
+    /* Colors for button */
+    --text-bt-cl: #ffffff;
+}
     
 .page {
+    color: var(--primary-txt-cl);
 
 }
 .logo-link {
-    color: #2196F3;
+    color: var(--accent-txt-cl);
 }
 
 .logo-header {
     color: #000000
 }
+
+.footer {
+    background: #2F303A;
+}
+
+/* Section-1 */
+.hero {
+    background:#2F303A;
+}
+
 
 .list {
     list-style: none;
@@ -32,21 +49,37 @@
 /* Навігація */
     /* Навигація по сайтам */
 .site-nav .link {
-    color: #212121;
+    color: var(--title-txt-cl);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-txt-cl);
 }
     /* Контакти */
 .site-nav .contact {
-    color: #757575;
+    color: var(--primary-txt-cl);
 }
 
 .site-nav .contact:hover,
 .site-nav .contact:focus {
-    color: #2196F3;
+    color: var(--accent-txt-cl);
 }
+
+/* Заголовки секцій */
+.section-title {
+    color: var(--title-txt-cl);
+}
+.list-title {
+    color: var(--title-txt-cl);
+}
+
+/* Button */
+
+.hero-button {
+    color: var(--text-bt-cl);
+    background-color: var(--accent-bg-cl);
+}
+
 
 
