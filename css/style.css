@@ -1,2 +1,40 @@
+/* колір основного тексту: color: #757575;
+колір 2-го тексту color: #212121 */
 
+/* білий #ffffff */
+/* акцент #2196F3; */
+/* основний фон #ffffff*/
+/* фон-2 #2F303A*/
+:root {
+    /* Fonts */
+    --main-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
 
+    /* Text colors */
+    --main-txt-cl: #212121;
+    --light-txt-cl: #ffffff;
+    --accent-txt-cl: #ff6c00;}
+    
+.page {
+
+}
+.logo-link {
+    color: #2196F3;
+}
+
+.logo-header {
+    color: #000000
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav .link {
+    color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
