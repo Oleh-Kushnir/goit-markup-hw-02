@@ -29,7 +29,8 @@
 .list {
     list-style: none;
 }
-
+/* Навігація */
+    /* Навигація по сайтам */
 .site-nav .link {
     color: #212121;
 }
@@ -38,3 +39,14 @@
 .site-nav .link:focus {
     color: #2196F3;
 }
+    /* Контакти */
+.site-nav .contact {
+    color: #757575;
+}
+
+.site-nav .contact:hover,
+.site-nav .contact:focus {
+    color: #2196F3;
+}
+
+
