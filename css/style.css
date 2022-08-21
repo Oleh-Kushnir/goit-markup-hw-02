@@ -6,11 +6,7 @@
 /* основний фон #ffffff*/
 /* фон-2 #2F303A*/
 :root {
-    /* Fonts */
-    --main-font: 'Open Sans', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
-
-    /* Text colors */
+   /* Text colors */
     --primary-txt-cl: #757575;
     --title-txt-cl: #212121;
     --accent-txt-cl: #2196F3 ;
@@ -28,9 +24,23 @@
 
     font-family: Roboto, sans-serif; 
 }
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* LOGO */
 .logo-link {
     color: var(--accent-txt-cl);
     font-family: Raleway, sans-serif;
+      
+    font-weight: 700;
+    font-size: 26px;    
+    line-height: 1.19; 
+    text-decoration: none; 
 }
 
 .logo-header {
@@ -53,6 +63,7 @@
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 
@@ -60,9 +71,18 @@
     list-style: none;
 }
 /* Навігація */
-    /* Навигація по сайтам */
+    /* Навiгація по сайтам */
 .site-nav .link {
     color: var(--title-txt-cl);
+         
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -72,6 +92,11 @@
     /* Контакти */
 .site-nav .contact {
     color: var(--primary-txt-cl);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .site-nav .contact:hover,
@@ -82,30 +107,81 @@
 /* Заголовки секцій */
 .section-title {
     color: var(--title-txt-cl);
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.section-title-minor {
+    color: var(--title-txt-cl);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.section-title-none {
+    color: var(--title-txt-cl);
+    
+    font-size: 16px;
+    line-height: 1.19;
 }
 .list-title {
     color: var(--title-txt-cl);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 /* Button */
 .button {
     color: var(--title-txt-cl);
     background-color: var(--primary-bg-cl);
+    font-family: inherit;
 }
 
 /* я не знаю чого кнопка не в центрі. поможіть(( */
+/* добавив margin i display: block)) */
 .hero-button {
     color: var(--text-bt-cl);
     background-color: var(--accent-bg-cl);
+    margin: 0 auto;
+    display: block;
+    font-family: inherit; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
     text-align: center;
+    letter-spacing: 0.06em;
 }
 .button.radio {
     color: var(--title-txt-cl);
     background-color: var(--primary-bg-cl);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
 }
 .button.radio:hover {
     color: var(--text-bt-cl);
     background-color: var(--accent-bg-cl);
+    font-family: inherit;
+} 
+
+.address {
+    color: var(--text-bt-cl);
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 
