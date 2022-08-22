@@ -10,28 +10,30 @@
     --primary-txt-cl: #757575;
     --title-txt-cl: #212121;
     --accent-txt-cl: #2196F3 ;
+    --text-hero: #ffffff;
+    --logo-header: #000000;
+    --logo-footer: #ffffff;
     /* Background */
-    --primary-bg-cl: #ffffff;
+    --primary-white-cl: #ffffff;
     --accent-bg-cl: #2196F3;
     --gray-bg-cl: #2F303A;
+    --section-bg-4: #F5F4FA;
     /* Colors for button */
     --text-bt-cl: #ffffff;
+    --active-bg-cl: #188CE8;
 }
     
-.page {
-    background: var(--primary-bg-cl);
-    color: var(--primary-txt-cl);
-
-    font-family: Roboto, sans-serif; 
-}
-
-.text {
-    font-weight: 400;
+body {
     font-size: 14px;
     line-height: 1.71;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+    color: var(--primary-txt-cl);
+    background-color: var(--primary-white-cl);
 }
-
+.text {
+    text-decoration: none;
+}
 /* LOGO */
 .logo-link {
     color: var(--accent-txt-cl);
@@ -44,11 +46,11 @@
 }
 
 .logo-header {
-    color: #000000;
+    color: var(--logo-header);
 }
 
 .logo-footer {
-    color: #ffffff;
+    color: var(--logo-footer);
 }
 
 footer {
@@ -60,10 +62,14 @@ footer {
     background: var(--gray-bg-cl);
 }
 .hero-title {
-    color: #ffffff;
+    color: var(--text-hero);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 
@@ -97,6 +103,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    font-style: normal;
 }
 
 .site-nav .contact:hover,
@@ -125,9 +132,10 @@ footer {
 
 .section-title-none {
     color: var(--title-txt-cl);
-    
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    /* identical to box height */
 }
 .list-title {
     color: var(--title-txt-cl);
@@ -136,6 +144,12 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+
+.list-link {
+    text-decoration: none;
 }
 
 /* Button */
@@ -159,7 +173,16 @@ footer {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
+
+.hero-button:focus,
+.hero-button:hover {
+    color: var(--text-bt-cl);
+    background-color: var(--active-bg-cl);
+    font-family: inherit;
+}
+
 .button.radio {
     color: var(--title-txt-cl);
     background-color: var(--primary-bg-cl);
@@ -168,7 +191,9 @@ footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
 }
+.button.radio:focus,
 .button.radio:hover {
     color: var(--text-bt-cl);
     background-color: var(--accent-bg-cl);
@@ -182,7 +207,30 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    font-style: normal;
 }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;  
+}
+.section-team {
+    background: var(--section-bg-4);
+}
+
+.worker {
+    background: var(--primary-white-cl);
+}
+
+
 
 
 
